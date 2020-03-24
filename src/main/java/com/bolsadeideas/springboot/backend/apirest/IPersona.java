@@ -1,7 +1,6 @@
 package com.bolsadeideas.springboot.backend.apirest;
 
 import org.springframework.stereotype.Component;
-import reactor.core.publisher.Mono;
 
 @FunctionalInterface
 @Component

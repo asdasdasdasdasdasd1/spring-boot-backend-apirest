@@ -1,12 +1,8 @@
 package com.bolsadeideas.springboot.backend.apirest;
 
+import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
-import org.springframework.util.ObjectUtils;
-import reactor.core.publisher.Mono;
-
-import java.util.ArrayList;
-import java.util.EnumMap;
 import java.util.function.Consumer;
 import java.util.function.Predicate;
 
@@ -14,10 +10,11 @@ import java.util.function.Predicate;
 public class SpringBootBackendApirestApplication {
 
 	public static void main(String[] args) {
+		SpringApplication.run(SpringBootBackendApirestApplication.class, args);
 		//javaBasic();
 		//expFunctionalInterface();
 		//expLambdas();
-		expLambdasBiFunctions();
+		//expLambdasBiFunctions();
 	}
 
 	public static void javaBasic() {
@@ -69,6 +66,7 @@ public class SpringBootBackendApirestApplication {
 		System.out.println(validate.validateTypeDocument(1,"46994989"));
 		System.out.println(validate.validateTypeDocument(2,"46994989"));
 		System.out.println(validate.validateTypeDocument(3,"46994989"));
+
 		System.out.println(validate.validateTypeDocument(1,"469949899"));
 		System.out.println(validate.validateTypeDocument(2,"1231231231231"));
 		System.out.println(validate.validateTypeDocument(3,"1231231231"));
